@@ -1,5 +1,5 @@
 # For separating posts on multiple pages
-loop.php<br>
+# loop.php<br>
 <b>
 Set category name<br>
 ![text-img-align](gitimg/loop1.png)<br>
