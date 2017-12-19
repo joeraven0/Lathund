@@ -10,7 +10,7 @@
 ?>
 <!--The post content, only categories (slug) with same name as page slug name-->
 <!--For tags use "tag"=.get_the_title.... instead-->
-<?php $txt = "category_name=".$post->post_name."&posts_per_page=10"; ?>     <!--String defines which post category-->
+<?php $txt = "category_name=".$post->post_name; ?>     <!--String defines which post category-->
   <?php query_posts($txt); ?>                                               <!--Publish post content-->
   <?php while(have_posts()):the_post(); ?>                                 
     <h1><?php the_title(); ?></h1>                                          <!--Print post title-->
