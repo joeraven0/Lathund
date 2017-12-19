@@ -9,6 +9,7 @@
   }
 ?>
 <!--The post content, only categories with same name as page title-->
+<!--For tags use "tag"=.get_the_title.... instead-->
 <?php $txt = "category_name=".get_the_title($post)."&posts_per_page=10"; ?> <!--String defines which post category-->
   <?php query_posts($txt); ?>                                               <!--Publish post content-->
   <?php while(have_posts()):the_post(); ?>                                 
