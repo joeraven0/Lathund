@@ -1,12 +1,12 @@
 ### 1. Skapa ny style.css i main-mappen
 ### 2. Lägg till
-/*
+`/*
 Theme Name: Start WordPress
 Author: Joakim Ringstad
 Description: Page converted to WP-theme
 Version: 0.0.1
 Tags: notags
-*/
+*/`
 
 3. Stylesheet
 <link href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/main.css" rel="stylesheet">
