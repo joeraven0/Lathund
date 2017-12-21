@@ -35,21 +35,26 @@ Tags: notags
 
 ### 7. The famous loop now manipulated to show different posts on multiple pages
 ```
-  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-  <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-    <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-    <?php the_content(); ?>
-  </div>
-  <?php endwhile; ?>
-  <div class="navigation">
-    <div class="next-posts"><?php next_posts_link(); ?></div>
-    <div class="prev-posts"><?php previous_posts_link(); ?></div>
-  </div>
-  <?php else : ?>
-  <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-    <h1>Not Found</h1>
-  </div>
-  <?php endif; ?>
+  <!--START - SHOW DIFFERENT CONTENT ON DIFFERENT PAGES CODE-->
+<!--The page content -->
+<?php 
+  if(have_posts()){                                                
+    while (have_posts()){                                               
+    the_post();                                                             
+    the_content();                                                         
+    }
+  }
+?>
+<!--The post content, only categories (slug) with same name as page slug name-->
+<!--For tags use "tag"=.get_the_title.... instead-->
+<?php $txt = "category_name=".$post->post_name; ?>     <!--String defines which post category-->
+  <?php query_posts($txt); ?>                                               <!--Publish post content-->
+  <?php while(have_posts()):the_post(); ?>                                 
+    <h1><?php the_title(); ?></h1>                                          <!--Print post title-->
+    <?php the_content(); ?>                                                 <!--Print post content-->
+  <?php endwhile; ?>                                
+<!--END-->
+</div>
 ```
 ### 8. The nav menu created by pages
 `<?php wp_list_pages( '&title_li=' ); ?>`
