@@ -1,12 +1,14 @@
 # Install wordpress on local apache server
-### To set user password<br><br>
+### To set user password
 `SET PASSWORD FOR 'username'@'localhost' = PASSWORD('password');`
+
 ------------------------------------------------
 ## 1.
 ### Download wordpress<br>
-`https://wordpress.org/download/`<br>
-#### Extract files into apache
+`https://wordpress.org/download/`
+### Extract files into apache
 `/var/www/html/wordpress` (or folder of choice)
+
 ------------------------------------------------
 ## 2.
 ### Create user
@@ -24,26 +26,31 @@
 `FLUSH PRIVILEGES;`
 
 ------------------------------------------------
-3. <br>
-Check user list and see that created user exists<br>
-SELECT User FROM mysql.user;<br>
-------------------------------------------------
-4.<br>
-Create database<br>
-4.1 Start db-admin<br>
-4.2 Create database with utf-8<br>
-4.3 Give specified user access to database<br>
-4.4 Flush (reload) privileges<br>
-<br>
-###### 4.1 sudo mysql -u root -p<br>
-###### 4.2 CREATE DATABASE databasename DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;<br>
-###### 4.3 GRANT ALL ON databasename.* TO 'username'@'localhost' IDENTIFIED BY 'password';<br>
-###### 4.4 `FLUSH PRIVILEGES;`
+## 3.
+### Check user list and see that created user exists<br>
+`SELECT User FROM mysql.user;`
 
 ------------------------------------------------
-5.<br>
-Install wordpress on server<br>
-5.1 Enter /localhost/wordpress in browser window or ip of server, ie 192.168.1.10/wordpress<br>
-5.2 Enter databasename, password, username for DB-access and username for wp-admin login and LET'S GO!<br>
-5.3 Wait for install<br>
-5.4 FINISH!
+## 4.
+### Create database
+##### 4.1 Start db-admin
+##### 4.2 Create database with utf-8
+##### 4.3 Give specified user access to database
+##### 4.4 Flush (reload) privileges
+
+###### 4.1
+`sudo mysql -u root -p`
+###### 4.2
+`CREATE DATABASE databasename DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;`
+###### 4.3
+`GRANT ALL ON databasename.* TO 'username'@'localhost' IDENTIFIED BY 'password';`
+###### 4.4
+`FLUSH PRIVILEGES;`
+
+------------------------------------------------
+## 5.
+##### Install wordpress on server
+###### 5.1 Enter `localhost/wordpress` in browser window or ip of server, ie `192.168.1.10/wordpress`
+###### 5.2 Enter databasename, password, username for DB-access and username for wp-admin login and LET'S GO!
+###### 5.3 Wait for install
+###### 5.4 FINISH!
