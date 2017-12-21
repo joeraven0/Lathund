@@ -8,28 +8,28 @@ Version: 0.0.1
 Tags: notags
 */`
 
-3. Stylesheet
-<link href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/main.css" rel="stylesheet">
+### 3. Stylesheet
+`<link href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/main.css" rel="stylesheet">`
 
-4. 
-<?php wp_head();?>
-</head>
+### 4. 
+`<?php wp_head();?>`
+##### </head>
 
-5.
-</footer>
-<?php wp_footer(); ?> 
-</body>
+### 5.
+##### </footer>
+`<?php wp_footer(); ?> `
+##### </body>
 
-6.
-Titel, ex AK-Trans
-<?php echo get_bloginfo( 'name' ); ?>
+### 6.
+`<title><?php echo get_bloginfo( 'name' ); ?></title>`
 
-Description, ex körning på Amager
-<?php echo get_bloginfo( 'description' ); ?>
 
-7.
-The loop
-  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+##### Description, ex körning på Amager
+`<?php echo get_bloginfo( 'description' ); ?>`
+
+### 7.
+##### The loop
+  `<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
     <?php the_content(); ?>
@@ -43,4 +43,4 @@ The loop
   <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     <h1>Not Found</h1>
   </div>
-  <?php endif; ?>
+  <?php endif; ?>`
