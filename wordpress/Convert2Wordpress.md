@@ -33,8 +33,7 @@ Tags: notags
 ##### Description, ie "Transport service in Copenhagen"
 `<?php echo get_bloginfo( 'description' ); ?>`
 
-### 7.
-##### The famous loop now manipulated to show different posts on multiple pages
+### 7. The famous loop now manipulated to show different posts on multiple pages
 ```
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -52,3 +51,5 @@ Tags: notags
   </div>
   <?php endif; ?>
 ```
+### 8. The nav menu created by pages
+`<?php wp_list_pages( '&title_li=' ); ?>`
