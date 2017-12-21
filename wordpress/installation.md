@@ -17,7 +17,7 @@
 ##### 2.3 Givet user privileges to access database
 ##### 2.4 Flush (reload) privileges
 ###### 2.1 
-`sudo mysql -u root -p<br>`
+`sudo mysql -u root -p
 ###### 2.2 
 `CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';`
 ###### 2.3 
@@ -27,7 +27,7 @@
 
 ------------------------------------------------
 ## 3.
-### Check user list and see that created user exists<br>
+### Check user list and see that created user exists
 `SELECT User FROM mysql.user;`
 
 ------------------------------------------------
@@ -49,7 +49,7 @@
 
 ------------------------------------------------
 ## 5.
-##### Install wordpress on server
+### Install wordpress on server
 ###### 5.1 Enter `localhost/wordpress` in browser window or ip of server, ie `192.168.1.10/wordpress`
 ###### 5.2 Enter databasename, password, username for DB-access and username for wp-admin login and LET'S GO!
 ###### 5.3 Wait for install
