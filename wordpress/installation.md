@@ -13,16 +13,15 @@
 ##### 2.1 Start db-admin<br>
 ##### 2.2 Create user<br>
 ##### 2.3 Givet user privileges to access database<br>
-##### 2.4 Flush (reload) privileges<br>
-<br>
-2.1 
+##### 2.4 Flush (reload) privileges
+###### 2.1 
 `sudo mysql -u root -p<br>`
-2.2 
+###### 2.2 
 `CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';`
-2.3 
+###### 2.3 
 `GRANT ALL PRIVILEGES ON * . * TO 'username'@'localhost';`
-2.4 
-`FLUSH PRIVILEGES;`<br>
+###### 2.4 
+`FLUSH PRIVILEGES;`
 ------------------------------------------------
 3. <br>
 Check user list and see that created user exists<br>
