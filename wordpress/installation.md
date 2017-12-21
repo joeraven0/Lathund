@@ -5,7 +5,7 @@
 ## 1.
 ### Download wordpress<br>
 `https://wordpress.org/download/`<br>
-#### Extract files into apache /var/www/html/wordpress (or folder of choice)<br>
+#### Extract files into apache `/var/www/html/wordpress` (or folder of choice)<br>
 ------------------------------------------------
 ## 2.
 ### Create user<br>
