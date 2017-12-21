@@ -1,10 +1,10 @@
-# Install wordpress on local apache server
+Install wordpress on local apache server
 To set user password<br><br>
 SET PASSWORD FOR 'username'@'localhost' = PASSWORD('password');
 ------------------------------------------------
 1.
-Download wordpress<br>
-https://wordpress.org/download/<br>
+###Download wordpress<br>
+`https://wordpress.org/download/`<br>
 Extract files into apache /var/www/html/wordpress (or folder of choice)<br>
 ------------------------------------------------
 2.<br>
