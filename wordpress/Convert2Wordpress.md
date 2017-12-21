@@ -14,13 +14,17 @@ Tags: notags
 `<link href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/main.css" rel="stylesheet">`
 
 ### 4. 
-`<?php wp_head();?>`
-##### </head>
+```
+<?php wp_head();?>
+</head>
+```
 
 ### 5.
-##### </footer>
-`<?php wp_footer(); ?> `
-##### </body>
+```
+</footer>
+<?php wp_footer(); ?>
+</body>
+```
 
 ### 6.
 `<title><?php echo get_bloginfo( 'name' ); ?></title>`
