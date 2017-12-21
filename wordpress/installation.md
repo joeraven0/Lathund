@@ -18,7 +18,7 @@
 ##### 2.3 Givet user privileges to access database
 ##### 2.4 Flush (reload) privileges
 ###### 2.1 
-`sudo mysql -u root -p
+`sudo mysql -u root -p`
 ###### 2.2 
 `CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';`
 ###### 2.3 
