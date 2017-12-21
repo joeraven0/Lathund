@@ -6,13 +6,13 @@
 ### Download wordpress<br>
 `https://wordpress.org/download/`<br>
 #### Extract files into apache
-`/var/www/html/wordpress` (or folder of choice)<br>
+`/var/www/html/wordpress` (or folder of choice)
 ------------------------------------------------
 ## 2.
-### Create user<br>
-##### 2.1 Start db-admin<br>
-##### 2.2 Create user<br>
-##### 2.3 Givet user privileges to access database<br>
+### Create user
+##### 2.1 Start db-admin
+##### 2.2 Create user
+##### 2.3 Givet user privileges to access database
 ##### 2.4 Flush (reload) privileges
 ###### 2.1 
 `sudo mysql -u root -p<br>`
@@ -22,6 +22,7 @@
 `GRANT ALL PRIVILEGES ON * . * TO 'username'@'localhost';`
 ###### 2.4 
 `FLUSH PRIVILEGES;`
+
 ------------------------------------------------
 3. <br>
 Check user list and see that created user exists<br>
@@ -34,10 +35,11 @@ Create database<br>
 4.3 Give specified user access to database<br>
 4.4 Flush (reload) privileges<br>
 <br>
-4.1 sudo mysql -u root -p<br>
-4.2 CREATE DATABASE databasename DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;<br>
-4.3 GRANT ALL ON databasename.* TO 'username'@'localhost' IDENTIFIED BY 'password';<br>
-4.4 FLUSH PRIVILEGES;<br>
+###### 4.1 sudo mysql -u root -p<br>
+###### 4.2 CREATE DATABASE databasename DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;<br>
+###### 4.3 GRANT ALL ON databasename.* TO 'username'@'localhost' IDENTIFIED BY 'password';<br>
+###### 4.4 `FLUSH PRIVILEGES;`
+
 ------------------------------------------------
 5.<br>
 Install wordpress on server<br>
