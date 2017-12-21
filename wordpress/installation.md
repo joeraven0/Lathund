@@ -1,4 +1,5 @@
-# Install wordpress on local apache server
+# Install wordpress on local apache server (Linux)
+## Needed: Apache server, mariadb or mysql
 ### To set user password
 `SET PASSWORD FOR 'username'@'localhost' = PASSWORD('password');`
 
