@@ -1,5 +1,5 @@
-### 1. Skapa ny style.css i main-mappen
-### 2. Lägg till
+### 1. Create style.css in main folder
+### 2. Add to style.css
 ```
 /*
 Theme Name: Start WordPress
@@ -10,31 +10,31 @@ Tags: notags
 */
 ```
 
-### 3. Stylesheet
+### 3. Stylesheet i header.php (or index.php)
 `<link href="<?php echo get_bloginfo('template_directory'); ?>/assets/css/main.css" rel="stylesheet">`
 
-### 4. 
+### 4. Define header
 ```
 <?php wp_head();?>
 </head>
 ```
 
-### 5.
+### 5. Define footer
 ```
 </footer>
 <?php wp_footer(); ?>
 </body>
 ```
 
-### 6.
+### 6. Define titlename (gets title from wordpress admin)
 `<title><?php echo get_bloginfo( 'name' ); ?></title>`
 
 
-##### Description, ex körning på Amager
+##### Description, ie "Transport service in Copenhagen"
 `<?php echo get_bloginfo( 'description' ); ?>`
 
 ### 7.
-##### The loop
+##### The famous loop now manipulated to show different posts on multiple pages
 ```
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
