@@ -1,5 +1,10 @@
 # Install wordpress on local apache server (Linux)
 ## Needed: Apache server, mariadb or mysql
+### Set IP of wordpress manually in wp-config.php
+```
+define('WP_HOME','http://example.com');
+define('WP_SITEURL','http://example.com');
+```
 ### To set user password
 `SET PASSWORD FOR 'username'@'localhost' = PASSWORD('password');`
 
