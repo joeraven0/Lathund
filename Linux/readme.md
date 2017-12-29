@@ -39,6 +39,7 @@ sudo mkdir -m 1777 /share
 ```
 sudo apt-get install ruby-dev
 sudo gem install sass
+sass --watch main.sass:main.css
 ```
 ### Printer RPi
 #### Drivers
