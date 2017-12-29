@@ -10,7 +10,7 @@ https://www.raspberrypi.org/magpi/samba-file-server/
 ### SASS
 - sudo apt-get install ruby-dev
 - sudo gem install sass
-### Printer
+### Printer RPi
 #### Drivers
 ```
 sudo apt-get install cups
@@ -50,5 +50,7 @@ Allow @local
 `
 sudo /etc/init.d/cups restart
 `
-#### Scanner
+###### Access admin and add printer through
+`http://localhost:631`
+#### Scanner software
 `sudo apt-get install simple-scan`
