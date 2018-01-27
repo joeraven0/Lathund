@@ -1,0 +1,2 @@
+height: calc(100% - (2px + 20px + 230px + 50px + 40px));
+//i.e. height: calc(div-fill-height - (page already filled))
