@@ -1,4 +1,4 @@
-#Key notes
+# Key notes
 ## Create widget in footer
 ### functions.php
 ```
