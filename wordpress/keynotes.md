@@ -1,6 +1,6 @@
-#Create widget in footer
-###functions.php
-'''
+# Create widget in footer
+### functions.php
+```
 function ny_widget() { 
     register_sidebar( array(
         'name'          => 'Footer widget 1',
@@ -10,12 +10,12 @@ function ny_widget() {
     ) ); 
 }
 add_action( 'widgets_init', 'ny_widget' );
-'''
-###footer.php
-'''
+```
+### footer.php
+```
 if ( is_active_sidebar( 'footer-widget-1' ) ) : ?>
     <div id="footer-widget-1" role="complementary">
     <?php dynamic_sidebar( 'footer-widget-1' ); ?>
     </div>     
 <?php endif; ?>
-'''
+```
