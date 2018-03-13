@@ -1,5 +1,5 @@
 # Key notes
-## Create widget in footer
+## Create custom widget in footer
 ### functions.php
 ```
 function ny_widget() { 
