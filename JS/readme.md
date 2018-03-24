@@ -35,3 +35,7 @@ mydiv.style.left = '15px';
 ```
 ### Quick syntax
 `$("p").css("background-color", "yellow");`
+`$("div").animate({left: '250px'});`
+`$("#test1").text("Hello world!");`
+`$("#test2").html("<b>Hello world!</b>");`
+`$("h1, h2, p").addClass("blue");`
