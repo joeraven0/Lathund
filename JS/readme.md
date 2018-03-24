@@ -33,3 +33,5 @@ mydiv.style.left = '15px';
 //OR document.getElementById('mydiv').style.top = "15px";
 //OR document.getElementById('mydiv').style.left = "15px";
 ```
+### Quick syntax
+`$("p").css("background-color", "yellow");`
