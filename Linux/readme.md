@@ -85,3 +85,9 @@ sudo /etc/init.d/cups restart
 `http://localhost:631`
 #### Scanner software
 `sudo apt-get install simple-scan`
+
+### Server
+##### Allow .htaccess
+`sudo leafpad /etc/apache2/apache2.conf`
+`AllowOverride All`
+`systemctl restart apache2`
