@@ -88,6 +88,7 @@ sudo /etc/init.d/cups restart
 
 ### Server
 ##### Allow .htaccess
-`sudo leafpad /etc/apache2/apache2.conf`
-`AllowOverride All`
-`systemctl restart apache2`
+```sudo leafpad /etc/apache2/apache2.conf
+AllowOverride All
+systemctl restart apache2```
+
