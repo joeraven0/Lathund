@@ -91,6 +91,7 @@ sudo /etc/init.d/cups restart
 ```
 sudo leafpad /etc/apache2/apache2.conf
 AllowOverride All
+a2enmod rewrite
 systemctl restart apache2
 ```
 
