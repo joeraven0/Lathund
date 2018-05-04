@@ -39,3 +39,25 @@ mydiv.style.left = '15px';
 `$("#test1").text("Hello world!");`
 `$("#test2").html("<b>Hello world!</b>");`
 `$("h1, h2, p").addClass("blue");`
+
+### Amabro stamp
+```
+function amabro(){
+jQuery('<div/>', {id: 'amabro',}).appendTo('body');
+jQuery('<p/>', {text: 'Hosted by '}).appendTo('#amabro');
+jQuery('<a/>', {href: 'http://amagerbromedia.se',text: '| amagerbromedia.se'}).appendTo('#amabro');
+$("#amabro").css("display", "flex");
+$("body").css("position", "relative");
+$("#amabro").css("position", "absolute");
+$("#amabro").css("text-shadow", "2px 2px 2px black");
+$("#amabro a").css("color", "white");
+$("#amabro a").css("text-decoration", "none");
+$("#amabro a").css("text-shadow", "1px 1px 1px white");
+$("#amabro").css("bottom", "10px");
+$("#amabro").css("right", "10px");
+$("#amabro p, #amabro a").css("margin", "0");
+$("#amabro p, #amabro a").css("padding", "0");
+$("#amabro p, #amabro a").css("font-family", "'Open Sans', sans-serif");
+$("#amabro p, #amabro a").css("font-size", "12px");
+} 
+```
