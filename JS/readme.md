@@ -61,3 +61,11 @@ $("#amabro p, #amabro a").css("font-family", "'Open Sans', sans-serif");
 $("#amabro p, #amabro a").css("font-size", "12px");
 } 
 ```
+
+### Read if microsoft browser is used
+```
+//if(microsoft edge OR microsoft explorer){alert}
+if (/Edge/.test(navigator.userAgent)||/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+alert('Microsoft browser is used');
+});
+```
