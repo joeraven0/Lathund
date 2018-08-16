@@ -18,10 +18,10 @@ $elapsedHours = floor(($now_date_time-$last_date_time)/3600);
 ```
 	include('connect.php');
 
-	$result = $conn->query(' ...some SQL-QUERY here... ');
+	$result = $conn->query(' ...SELECT id FROM... ');
 	    if($row = $result->fetch_assoc()) {
 	    	
-      		echo '...do some stuff...';
+      		echo '...do some stuff i.e. $variable = row[id];...';
       
 	    }
 
