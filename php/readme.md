@@ -44,7 +44,7 @@ $elapsedHours = floor(($now_date_time-$last_date_time)/3600);
 ```
 
 #### Request DB using AJAX
-Replacing innerHTML of echo-string from SQL-request
+Replacing innerHTML of echo-string from SQL Query
 ```
 setInterval(function(){ loaddb(); }, 1000);
 
@@ -56,7 +56,7 @@ function loaddb() {
                 document.getElementById("txtHint").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET", "getdb.php", true);
+        xmlhttp.open("GET", "myDBquery.php", true);
         xmlhttp.send();    
 }
 ```
