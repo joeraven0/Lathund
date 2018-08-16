@@ -12,3 +12,23 @@ $elapsedHours = floor(($now_date_time-$last_date_time)/3600);
 
  echo  $datetime . '<br>';	
 ```
+#### Connect
+
+###### Before SQL-request
+include('connect.php');
+
+###### End
+$conn->close();
+
+##### connect.php
+$servername = "localhost";
+$username = "*";
+$password = "*";
+$dbname = "*";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
