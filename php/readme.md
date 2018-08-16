@@ -1,6 +1,6 @@
-#####PHP Lathund
+###PHP Lathund
 
-### Elapsed hours since date-hour
+#### Elapsed hours since date-hour
 
 ```
 $datetime = '2018-08-16 15:20';
