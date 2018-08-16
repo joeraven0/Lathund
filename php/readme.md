@@ -15,13 +15,21 @@ $elapsedHours = floor(($now_date_time-$last_date_time)/3600);
 #### Connect
 
 ##### SQL-request
+```
 include('connect.php');
 
-..content
+	$result = $conn->query(' SQL-QUERY ');
+	    if($row = $result->fetch_assoc()) {
+	    	
+      echo '...do some stuff...';
+      
+	    }
 
 $conn->close();
+```
 
 ##### connect.php
+```
 $servername = "localhost";
 $username = "*";
 $password = "*";
@@ -33,3 +41,4 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
+```
