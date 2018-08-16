@@ -14,10 +14,11 @@ $elapsedHours = floor(($now_date_time-$last_date_time)/3600);
 ```
 #### Connect
 
-###### Before SQL-request
+###### SQL-request
 include('connect.php');
 
-###### End
+..content
+
 $conn->close();
 
 ##### connect.php
