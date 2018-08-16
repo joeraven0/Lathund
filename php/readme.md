@@ -60,3 +60,14 @@ function loaddb() {
         xmlhttp.send();    
 }
 ```
+Alt version ajax
+```
+$.ajax
+({
+	url: './myDBquery.php',
+	success: function(){
+		$('#popup').delay(500).text('SPARAT!');
+		wakeUp();
+		}
+});
+```
