@@ -42,3 +42,21 @@ $elapsedHours = floor(($now_date_time-$last_date_time)/3600);
 	    die("Connection failed: " . $conn->connect_error);
 	} 
 ```
+
+#### Request DB using AJAX
+Replacing innerHTML of echo-string from SQL-request
+```
+setInterval(function(){ loaddb(); }, 1000);
+
+			
+function loaddb() {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", "getdb.php", true);
+        xmlhttp.send();    
+}
+```
