@@ -1,4 +1,4 @@
-###PHP Lathund
+# PHP Lathund
 
 #### Elapsed hours since date-hour
 
