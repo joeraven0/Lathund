@@ -8,7 +8,7 @@ $now_date_time = strtotime(date("Y-m-d H:i"));
 $last_date_time = strtotime($datetime);
 $elapsedHours = floor(($now_date_time-$last_date_time)/3600);
 
- echo $elapsedHours . ' timmar sedan vattning' . '<br>'; 
+ echo $elapsedHours . ' Hours passed: ' . $elapsedHours . '<br>'; 
 
  echo  $datetime . '<br>';	
 ```
@@ -16,29 +16,29 @@ $elapsedHours = floor(($now_date_time-$last_date_time)/3600);
 
 ##### SQL-request
 ```
-include('connect.php');
+	include('connect.php');
 
 	$result = $conn->query(' SQL-QUERY ');
 	    if($row = $result->fetch_assoc()) {
 	    	
-      echo '...do some stuff...';
+      		echo '...do some stuff...';
       
 	    }
 
-$conn->close();
+	$conn->close();
 ```
 
 ##### connect.php
 ```
-$servername = "localhost";
-$username = "*";
-$password = "*";
-$dbname = "*";
+	$servername = "localhost";
+	$username = "*";
+	$password = "*";
+	$dbname = "*";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+	$conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
+	if ($conn->connect_error) {
+	    die("Connection failed: " . $conn->connect_error);
+	} 
 ```
